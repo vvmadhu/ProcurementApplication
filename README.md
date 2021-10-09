@@ -23,5 +23,25 @@ Here is the flow of procurement Application
 ![image](https://user-images.githubusercontent.com/4353354/136665269-1121bd71-2c00-4911-b014-e9c3919de17e.png)
 powered by mermaid
 
+
 <graph TD>
-   <A[client request] --> B{online?} B --> |Yes| C[Online]  C --> D{action?} D --> |read| E1[Update data from outfile to server if any] E1 --> E2[Refresh from server to local copy/infile] E2 --> E3[read from local copy/infile and display] E3 --> Z[END] D --> |update| F1[Update data from outfile to server if any] F1 --> F2[followed by current requested data] F2 --> F3[Refresh from server to local copy/infile] F3 --> Z B --> |No| G[Offline] G --> H{action?} H --> |read| I[read from local copy/infile and display] I --> Z H --> |update| J[Update/append data to outfile data] J --> Z>
+   <A[client request] --> B{online?} B --> |Yes| C[Online]  C --> D{action?} D --> |read| >E1[Update data from outfile to server if any] E1 --> E2[Refresh from server to local copy/infile] E2 --> E3[read from local copy/infile and display] E3 --> Z[END] D --> |update| F1[Update data from outfile to server if any] F1 --> F2[followed by current requested data] F2 --> F3[Refresh from server to local copy/infile] F3 --> Z B --> |No| G[Offline] G --> H{action?} H --> |read| I[read from local copy/infile and display] I --> Z H --> |update| J[Update/append data to outfile data] J --> Z>      
+
+<graph TD>
+   <A[client request] --> B{online?}
+	B --> |Yes| C[Online]
+    C --> D{action?}
+	D --> |read| E1[Update data from outfile to server if any]
+    E1 --> E2[Refresh from server to local copy/infile]
+    E2 --> E3[read from local copy/infile and display]
+    E3 --> Z[END]
+	D --> |update| F1[Update data from outfile to server if any]
+    F1 --> F2[followed by current requested data]
+    F2 --> F3[Refresh from server to local copy/infile]
+    F3 --> Z
+	B --> |No| G[Offline]
+	G --> H{action?}
+	H --> |read| I[read from local copy/infile and display]
+	I --> Z
+	H --> |update| J[Update/append data to outfile data]
+	J --> Z>
