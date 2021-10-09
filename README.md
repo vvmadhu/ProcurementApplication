@@ -20,4 +20,4 @@ Here is the flow of procurement Application
 1. Client application is a standalone application, and it needs to be installed as a library in each client system (be it online or offline system)
 2. This applicaton can be java swing based application, will make REST calls to server component for a data-day business activities
 3. Application will maintain local copy of the data for a offline functionality, using <b>in</b> directory and an <b>out</b> directory for offline updates. Details of this functionality provided below
-![image](https://user-images.githubusercontent.com/4353354/136664986-a2253147-d266-46de-bde1-5a307f43c982.png)
+![image](https://user-images.githubusercontent.com/4353354/136665269-1121bd71-2c00-4911-b014-e9c3919de17e.png)
