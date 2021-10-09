@@ -21,5 +21,4 @@ Here is the flow of procurement Application
 2. This applicaton can be java swing based application, will make REST calls to server component for a data-day business activities
 3. Application will maintain local copy of the data for a offline functionality, using <b>in</b> directory and an <b>out</b> directory for offline updates. Details of this functionality provided below
 
-flowchart TD
-    Start --> Stop
+![image](https://user-images.githubusercontent.com/4353354/136664986-a2253147-d266-46de-bde1-5a307f43c982.png)
